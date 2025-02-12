@@ -1,0 +1,11 @@
+# environment.yml
+name: dockerfile-practice
+services:
+  analysis-env:
+    image: emmaw20/dockerfile-practice
+    ports:
+      - "8787:8787"
+    volumes:
+      - .:/home/rstudio/work
+    environment:
+      PASSWORD: "password"
